@@ -1,25 +1,23 @@
-/****************************************************
+/********************************************************
 * Ex 8-3: Write a program to average n int-numbers	*
-*													*
-* Author: crawlingbear								*
-*													*
-* Usage: user inputs a single number (+/-)			*
-* 		 the program returns printout of			*
-* 		 user inputs in aritmatic form and			*
-* 		 the resulting float_average 				*
-* 													*
-* Ex form: ( ## + ## - ##) / ##_inputs				*
-****************************************************/ 
+*							*
+* Usage: user inputs a single number (+/-)		*
+* 	 the program returns printout of 		*
+* 	 user inputs in aritmatic form and		*
+* 	 the resulting float_averag	 		*
+* 							*
+* Ex form: ( ## + ## - ##) / ##_inputs			*
+*********************************************************/ 
 #include <stdio.h>
 #include <string.h>
 
-int		current;				/* current value from user */
-int		sum_inputs;				/* sum of user inputs */	
-int		qty_inputs;				/* # of inputs */
-float 	average;				/* average value calculated */
+int		current;	/* current value from user */
+int		sum_inputs;	/* sum of user inputs */	
+int		qty_inputs;	/* # of inputs */
+float 	average;		/* average value calculated */
 
-char 	line[80];				/* number input from keyboard */
-char 	log_line[999];			/* running log of user inputs in arithmatic form*/
+char 	line[80];		/* number input from keyboard */
+char 	log_line[999];		/* running log of user inputs in arithmatic form*/
 char 	formula_print[999]; 	/* shows equation for user view */
 char 	qty_inputs_char[999];	/*used to convert qty_inputs to char */
 
@@ -33,7 +31,6 @@ int main(){
 	while(1){
 		if ( qty_inputs > 0){
 		//	printf("Debug test line[0]: %c line[1]: %c\n", line[0], line[1]);
-		//	printf("Average of %s\n", log_line);
 			printf("Average Formula: %s\n", formula_print);
 			printf("Result: %f\n", average);
 		}
